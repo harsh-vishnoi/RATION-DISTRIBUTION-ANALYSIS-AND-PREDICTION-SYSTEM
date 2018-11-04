@@ -83,8 +83,8 @@ ax.scatter(x1, y1, z1, c='b', marker='o')
 plt.show()
 
 #Predicting a new result with Linear Regression
-linear_regressor.predict([0,18])
+linear_regressor.predict([1,39])
 
 #Predicting a new result with Polynomial Regression
-lin_regressor_2.predict(poly_regressor.fit_transform([0,18]))
+lin_regressor_2.predict(poly_regressor.fit_transform([1,39]))
 

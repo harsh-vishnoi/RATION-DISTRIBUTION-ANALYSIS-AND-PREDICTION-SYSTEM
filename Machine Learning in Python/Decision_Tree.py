@@ -42,7 +42,7 @@ regressor.fit(X_train,y_train )
 
 
 #Predicting a new result 
-y_pred = regressor.predict([0,18])
+y_pred = regressor.predict([1,39])
 
 
 #Visualising the  Decision Tree Regression Model Results

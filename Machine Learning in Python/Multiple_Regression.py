@@ -31,7 +31,7 @@ regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 
 #Predicting results on Test set
-y_pred = regressor.predict(X_test)
+y_pred = regressor.predict([1,39])
 
 
 

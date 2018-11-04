@@ -43,7 +43,7 @@ regressor = RandomForestRegressor(n_estimators = 500, random_state=0)
 regressor.fit(X_train,y_train)
 
 #Predicting a new result 
-y_pred = regressor.predict([0,18])
+y_pred = regressor.predict([1,39])
 
 
 #Visualising the Random Forest Regression Results

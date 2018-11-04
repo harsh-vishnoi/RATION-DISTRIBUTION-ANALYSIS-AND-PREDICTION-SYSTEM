@@ -41,7 +41,7 @@ regressor = SVR(kernel = 'rbf')
 regressor.fit(X_train,y_train)
 
 #Predicting a new result 
-y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.array([[0,18]]))))
+y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.array([[1,39]]))))
 
 
 #Visualising the SVR Results
