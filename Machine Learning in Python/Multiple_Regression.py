@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('/Users/kanishka/Desktop/Codes/Minor Project Final/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM-master-2/Ration_data/Test_Data.csv')
+dataset = pd.read_csv('Test_Data.csv')
 
 X = dataset.iloc[:,4:6].values
 y = dataset.iloc[:,8].values
@@ -32,5 +32,6 @@ regressor.fit(X_train, y_train)
 
 #Predicting results on Test set
 y_pred = regressor.predict(X_test)
+
 
 

@@ -71,7 +71,7 @@ z = y_train
 
 ax.scatter(x, y, z, c='r', marker='o')
 
-ax.set_title(' Linear Regression ')
+ax.set_title(' Polynomial Regression ')
 ax.set_xlabel(' Male/Female')
 ax.set_ylabel(' Age ')
 ax.set_zlabel(' Calories ')
