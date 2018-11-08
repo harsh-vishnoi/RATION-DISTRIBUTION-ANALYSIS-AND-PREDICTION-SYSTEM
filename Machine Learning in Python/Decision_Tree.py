@@ -53,7 +53,7 @@ x = X_train[:,0]
 y = X_train[:,1]
 z = y_train
 
-ax.scatter(x, y, z, c='r', marker='o')
+ax.scatter(x, y, z, c='r', marker='+')
 
 ax.set_title(' Decision Tree Regression Model  ')
 ax.set_xlabel(' Male/Female')
@@ -63,7 +63,7 @@ ax.set_zlabel(' Calories ')
 x1 = X_test[:,0]
 y1 = X_test[:,1]
 z1 = regressor.predict(X_test)
-ax.scatter(x1, y1, z1, c='b', marker='o')
+ax.scatter(x1, y1, z1, c='b', marker='*')
 plt.show()
 
 
