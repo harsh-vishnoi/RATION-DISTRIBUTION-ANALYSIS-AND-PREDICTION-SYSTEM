@@ -6,7 +6,7 @@ import pandas as pd
 
  #Importing Dataset
  
-dataset = pd.read_csv('Test_Data.csv')
+dataset = pd.read_csv('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Machine Learning in Python/CLUSTERING/Test_Data.csv')
 X = dataset.iloc[:,[11,9]].values
 
 #Using Elbow method to find the number of clusters
