@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('compressed_data.csv')
+dataset = pd.read_csv('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Machine Learning in Python/REGRESSION_SECOND/compressed_data_clustering.csv')
 
 X = dataset.iloc[:,[4,9,11,12,13]].values
 y = dataset.iloc[:,8].values

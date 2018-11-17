@@ -43,3 +43,25 @@ plt.ylabel('Calories')
 plt.legend()
 plt.show() 
 
+#Adding to the main dataset
+
+import csv
+rows=[]
+fields=[]
+with open('Answer.csv','r') as csv_input:
+    csvreader= csv.reader(csv_input)
+    fields=next(csvreader)
+    for row in csvreader:
+        rows.append(row)
+fields.append("CLUSTERS")
+i=0        
+for row in rows:
+    row.append(y_kmeans[i])
+    i+=1        
+
+with open('Answer.csv','w') as csvfile:
+    csvwriter=csv.writer(csvfile)
+    csvwriter.writerow(fields)
+    csvwriter.writerows(rows)
+    
+
