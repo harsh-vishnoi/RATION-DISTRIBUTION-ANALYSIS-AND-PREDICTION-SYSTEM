@@ -42,12 +42,6 @@ Adhaar card of every person in the family is linked with this app which helps in
    6. CLUSTERING
    7.	DIVISION OF RATION ACCORDING TO CLUSTERS
    
-  
-# RESULT
-   
-The best among these is obtained by Random forest using the python software. This data is the error in total calories of a          family when we have considered the factors : age, gender, number of male and females in a family and total number of people in the family to predict the total requirement of calories of a family.
-Next we have made clusters considering two factors which are the total predicted calories from the above step and the total income of all the family members. 
-According to this we obtained 8 clusters using the Elbow method.
 
 # CONCLUSION
 
@@ -62,6 +56,13 @@ This project gave all four of us a great opportunity to look deeper into many Ma
 |2011-12|25.7|13.7|21.9|
 
 # RESULTS
+
+The best among these is obtained by Random forest using the python software. This data is the error in total calories of a    family when we have considered the factors : age, gender, number of male and females in a family and total number of people in the family to predict the total requirement of calories of a family.
+Next we have made clusters considering two factors which are the total predicted calories from the above step and the total income of all the family members. 
+According to this we obtained 8 clusters using the Elbow method.
+
+
+![alt text](https://github.com/harsh-vishnoi/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/blob/master/Readme/elbow.jpg)
 
  * Hardware / Software requirements
 
