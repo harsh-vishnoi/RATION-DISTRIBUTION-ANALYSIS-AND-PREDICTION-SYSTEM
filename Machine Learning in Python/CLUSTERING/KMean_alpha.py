@@ -4,10 +4,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
  #Importing Dataset
- 
-dataset = pd.read_csv("Final_file_of_family_data_4.csv")
-X = dataset.iloc[:,[11,19]].values
+
+dataset = pd.read_csv('File_After_Regressions_5.csv')
+X = dataset.iloc[:,[11,16]].values
 
 #Using Elbow method to find the number of clusters
 from sklearn.cluster import KMeans
@@ -43,7 +44,7 @@ plt.ylabel('Calories')
 plt.legend()
 plt.show() 
 
-#Adding to the main dataset
+"""#Adding to the main dataset
 
 import csv
 rows=[]
@@ -62,6 +63,6 @@ for row in rows:
 with open('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Ration_data/"File_with_clusters_5.csv"','w') as csvfile:
     csvwriter=csv.writer(csvfile)
     csvwriter.writerow(fields)
-    csvwriter.writerows(rows)
+    csvwriter.writerows(rows) """
     
 

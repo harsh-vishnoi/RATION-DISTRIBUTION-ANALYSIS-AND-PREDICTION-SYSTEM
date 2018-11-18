@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #Importing the Dataset
-dataset = pd.read_csv('compressed_data_clustering.csv')
+
+dataset = pd.read_csv('Final_file_of_family_data.csv')
 X = dataset.iloc[:,[4,9,12,13]].values
 y = dataset.iloc[:,8:9].values
 
@@ -40,7 +41,7 @@ y_pred = y_pred.ravel()
 
 
 
-#Adding to the main dataset
+"""#Adding to the main dataset
 import csv
 rows=[]
 fields=[]
@@ -58,5 +59,5 @@ for row in rows:
 with open('Answer.csv','w') as csvfile:
     csvwriter=csv.writer(csvfile)
     csvwriter.writerow(fields)
-    csvwriter.writerows(rows)
+    csvwriter.writerows(rows)"""
     
