@@ -1,11 +1,7 @@
 # K Mean Clustering
-dataset <- read.csv('Test1_Kmean.csv')
-X <- dataset[8:11]
+dataset <- read.csv('RF_Final.csv')
+X <- dataset[13:14]
 
-# Encoding the categorical data
-X$ids_familyrelation_gender = factor(X$ids_familyrelation_gender,
-                                           levels = c('Female', 'Male'),
-                                           labels = c(0,1))
 
 #Elbow method
 set.seed(6)

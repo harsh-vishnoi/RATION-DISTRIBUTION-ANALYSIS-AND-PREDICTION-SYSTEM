@@ -1,23 +1,24 @@
 # Multiple Linear regression
  
 # Importing the dataset
-dataset = read.csv('Test1.csv')
+dataset = read.csv('compressed_data.csv')
+dataset = dataset[7:12]
 
-# Encoding the categorical data
-dataset$ids_familyrelation_gender = factor(dataset$ids_familyrelation_gender,
-                                           levels = c('Female', 'Male'),
-                                           labels = c(0,1))
 
 set.seed(123)
+library(caTools)
 
 # Splitting the dataset into test set and training set
-split = sample.split(dataset$calories, SplitRatio = 2/3)
+split = sample.split(dataset$Calories, SplitRatio = 2/3)
 training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
 
 # Fitting the Multiple Linear Regression model to the training set
-regressor = lm(formula = calories ~ ids_familyrelation_gender + ids_familyrelation_age,
+regressor = lm(formula = Calories ~ salary + Count + male + female + selection4_familyrelation_age,
                data = training_set)
 
 # predicting thr test results
-y_pred = predict(regressor, newdata = test_set)
+pred_MR = predict(regressor, newdata = dataset)
+#data <- read.csv(file.choose(), header = TRUE)
+# data <- cbind(data, pred_MR)
+#write.csv(data, "comp.csv")
