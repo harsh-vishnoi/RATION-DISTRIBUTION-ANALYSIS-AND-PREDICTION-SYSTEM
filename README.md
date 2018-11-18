@@ -10,6 +10,9 @@ During September 2013, Parliament passed the National Food Security Act (NFSA), 
    2. Zero hunger
    3. Responsible consumption and production
 
+![alt text](https://github.com/harsh-vishnoi/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/blob/master/Readme/download.png)
+
+
 ## **Introduction**
 
    The Public Distribution System (PDS) evolved as a system of management of scarcity and for distribution of food grains at affordable prices. But this system could not achieve its desired objectives because of widespread corruption. So to remove the loopholes of this system, government re-launched the Targeted Public Distribution System (TPDS) in June, 1997 with focus on the poor. Under the TPDS, States were required to formulate and implement foolproof arrangements for the identification of the poor for delivery of food grains. This programme is run by the ministry of consumer affairs, Govt. of India.But TPDS also had same loopholes and problems. TPDS has been criticised on the following grounds:
@@ -34,13 +37,13 @@ Adhaar card of every person in the family is linked with this app which helps in
    1. DATA SCRAPING
    2. ALGORITHM APPLICATION
    3. TRYING TO VISUALISE THE REGRESSION
-   4.	Compressing the Data
-   5.	Applying the Regression Model to our Data
-   6. 	CLUSTERING
+   4.	COMPRESSING THE DATA
+   5.	APPLYING REGRESSION MODEL
+   6. CLUSTERING
    7.	DIVISION OF RATION ACCORDING TO CLUSTERS
    
   
-  # RESULT
+# RESULT
    
 The best among these is obtained by Random forest using the python software. This data is the error in total calories of a          family when we have considered the factors : age, gender, number of male and females in a family and total number of people in the family to predict the total requirement of calories of a family.
 Next we have made clusters considering two factors which are the total predicted calories from the above step and the total income of all the family members. 
@@ -57,3 +60,13 @@ This project gave all four of us a great opportunity to look deeper into many Ma
 |1993-94|50.1|31.8|45.3|
 |2004-05|41.8|25.7|37.2|
 |2011-12|25.7|13.7|21.9|
+
+
+# References
+We referred some Research Papers like:
+
+1. e-PDS Portal of India Leveraging technology to provide reliable and timely 
+	information on Public Distribution System
+   By: Bhavya Goswami, OneWorld Foundation India
+2.	Public distribution of food in India: Coverage, targeting and leakages
+   By: Deepak Ahluwalia
