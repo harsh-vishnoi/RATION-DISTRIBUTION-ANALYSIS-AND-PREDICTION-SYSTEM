@@ -1,10 +1,10 @@
 # RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM
 
-Overview
+**Overview**
 
 During September 2013, Parliament passed the National Food Security Act (NFSA), 2013. The NFSA seeks to make the right to food a legal entitlement by providing subsidised food grains to nearly two-thirds of the population. The Act relies on the existing Targeted Public Distribution System (TPDS) mechanism to deliver these entitlements. But this method has many loopholes as discussed below. Here in our project we have tried to find those loopholes and propose a better and more accurate method of ration distribution.
 
- * Sustainable Goals
+ * **Sustainable Goals**
 
    1. Strong institution (Remove corruption)
    2. Zero hunger
