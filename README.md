@@ -52,3 +52,8 @@ Concludingly, this project is a new outlook in the field of Ration Distribution 
 This project gave all four of us a great opportunity to look deeper into many Machine Learning algorithms like Multiple, Polynomial, Support Vector, Decision Tree , Random Forest Regression and K- Means Clustering Algorithm.
 
 
+| Year | Rural | Urban | Total | 
+|------|-------|-------|-------|
+|1993-94|50.1|31.8|45.3|
+|2004-05|41.8|25.7|37.2|
+|2011-12|25.7|13.7|21.9|
