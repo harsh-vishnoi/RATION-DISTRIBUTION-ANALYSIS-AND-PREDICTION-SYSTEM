@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #Importing the Dataset
-dataset = pd.read_csv('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Machine Learning in Python/REGRESSION_SECOND/compressed_data_clustering.csv')
+dataset = pd.read_csv('compressed_data_clustering.csv')
 X = dataset.iloc[:,[4,9,12,13]].values
 y = dataset.iloc[:,8:9].values
 
@@ -40,7 +40,7 @@ y_pred = y_pred.ravel()
 import csv
 rows=[]
 fields=[]
-with open('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Machine Learning in Python/REGRESSION_SECOND/compressed_data_clustering.csv','r') as csv_input:
+with open('compressed_data_clustering.csv','r') as csv_input:
     csvreader= csv.reader(csv_input)
     fields=next(csvreader)
     for row in csvreader:
@@ -51,7 +51,7 @@ for row in rows:
     row.append(y_pred[i])
     i+=1        
 
-with open('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Machine Learning in Python/REGRESSION_SECOND/Answer.csv','w') as csvfile:
+with open('Answer.csv','w') as csvfile:
     csvwriter=csv.writer(csvfile)
     csvwriter.writerow(fields)
     csvwriter.writerows(rows)
