@@ -5,7 +5,7 @@ fields=[]
 rows=[]
 i=0
 
-with open('File_with_clusters_5.csv','r') as csv_input:
+with open('File_with_clusters_7.csv','r') as csv_input:
 	csvreader= csv.reader(csv_input)
 	fields=next(csvreader)
 	for row in csvreader:
@@ -151,7 +151,7 @@ for i in range(8):
 
 print(calculated_cal)
 
-#Adding to the main dataset
+"""#Adding to the main dataset
 import csv
 rows=[]
 fields=[]
@@ -170,5 +170,5 @@ with open('Final_data_file_6.csv','w') as csvfile:
     csvwriter=csv.writer(csvfile)
     csvwriter.writerow(fields)
     csvwriter.writerows(rows)
-    
+"""
 
