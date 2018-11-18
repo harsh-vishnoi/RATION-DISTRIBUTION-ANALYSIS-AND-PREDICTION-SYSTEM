@@ -4,6 +4,7 @@ dataset = dataset[7:12]
 
 
 # Splitting the data set into test set and training set
+library(caTools)
 set.seed(123)
 split = sample.split(dataset$Calories, SplitRatio = 2/3)
 training_set = subset(dataset, split == TRUE)
@@ -40,6 +41,19 @@ poly_reg = lm(formula = dataset$Calories ~ dataset$selection4_familyrelation_age
 
 summary(poly_reg)
 
+poly_reg2 = lm(formula = dataset$Calories ~ dataset$selection4_familyrelation_age + dataset$selection4_familyrelation_age2 + dataset$selection4_familyrelation_age3 + dataset$selection4_familyrelation_age4 +
+                dataset$salary + dataset$salary2 + dataset$salary3 + dataset$salary4 +
+                dataset$female +
+                dataset$Count ,
+              data = training_set)
+
+poly_reg3 = lm(formula = dataset$Calories ~ dataset$selection4_familyrelation_age + dataset$selection4_familyrelation_age2 + dataset$selection4_familyrelation_age3 + 
+                dataset$salary + dataset$salary2 + dataset$salary3 + dataset$salary4 +
+                dataset$female +
+                dataset$Count ,
+              data = training_set)
+
 #predicting the test results
 pred_PR = predict(poly_reg, newdata = dataset)
+pred_PR3 = predict(poly_reg3, newdata = dataset)
 
