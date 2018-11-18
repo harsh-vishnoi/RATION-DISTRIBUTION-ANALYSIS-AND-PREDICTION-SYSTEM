@@ -34,4 +34,21 @@ Adhaar card of every person in the family is linked with this app which helps in
    1. DATA SCRAPING
    2. ALGORITHM APPLICATION
    3. TRYING TO VISUALISE THE REGRESSION
+   4.	Compressing the Data
+   5.	Applying the Regression Model to our Data
+   6. 	CLUSTERING
+   7.	DIVISION OF RATION ACCORDING TO CLUSTERS
+   
+  
+  # RESULT
+   
+The best among these is obtained by Random forest using the python software. This data is the error in total calories of a          family when we have considered the factors : age, gender, number of male and females in a family and total number of people in the family to predict the total requirement of calories of a family.
+Next we have made clusters considering two factors which are the total predicted calories from the above step and the total income of all the family members. 
+According to this we obtained 8 clusters using the Elbow method.
+
+# CONCLUSION
+
+Concludingly, this project is a new outlook in the field of Ration Distribution to the underprivileged in India. Because, instead of just keeping the Salary Slabs in minds, a incorporates a bigger list of features such as count of people in his family, their genders, total income of a family and their age. This can be a revolutionary approach as having the same amount of Ration to distribute as it was earlier, it is now being distributed more strategically and efficiently. 
+This project gave all four of us a great opportunity to look deeper into many Machine Learning algorithms like Multiple, Polynomial, Support Vector, Decision Tree , Random Forest Regression and K- Means Clustering Algorithm.
+
 
