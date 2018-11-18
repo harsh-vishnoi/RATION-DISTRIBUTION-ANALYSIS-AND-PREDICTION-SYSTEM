@@ -61,6 +61,34 @@ This project gave all four of us a great opportunity to look deeper into many Ma
 |2004-05|41.8|25.7|37.2|
 |2011-12|25.7|13.7|21.9|
 
+# RESULTS
+
+ * Hardware / Software requirements
+
+ 	1. Python : Spyder
+	2. R : R studio
+	3. React Native
+	4. Firebase
+	5. Javascript
+  
+  * Screenshot Table
+  
+|Methods / Software| Percentage Error |
+|-----|-----|
+|Random Forest / py|2.31%|
+|Random Forest / R|3.85%|
+|Multiple Reg. / py|5.64%|
+|Multiple Reg. / R|5.73%|
+|SVR / py|46.57%|
+|SVR / R|4.59%|
+|Decision Tree / R|7.02%|
+|Polynomial Reg. / py|3.97%|
+|Polynomial Reg. / R|4.02%|
+
+![alt text](https://github.com/harsh-vishnoi/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/blob/master/Readme/Graph1%20for%20visualising%20the%20data.png)
+
+![alt text](https://github.com/harsh-vishnoi/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/blob/master/Readme/Graph2%20for%20visualising%20the%20data.png)
+
 
 # References
 We referred some Research Papers like:
