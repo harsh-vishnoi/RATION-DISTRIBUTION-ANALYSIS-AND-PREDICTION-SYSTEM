@@ -4,7 +4,7 @@ import csv
 fields=[]
 rows=[]
 i=0
-with open('Answer.csv','r') as csv_input:
+with open('File_with_clusters_5.csv','r') as csv_input:
 	csvreader= csv.reader(csv_input)
 	fields=next(csvreader)
 	for row in csvreader:
@@ -35,7 +35,7 @@ if decrement<=1:
     for i in range(8):
         cal[i]=cal[i]*decrement 
 cal_original=cal[:] 
-print(decrement)
+
 if decrement>.9 and decrement<1:  
     a1=cal[3]*.1
     cal[1]+=a1
@@ -77,7 +77,7 @@ elif decrement<=.7:
     cal[7]+=a4
     cal[2]-=a4
        
-print(sum(cal))
+
 calculated_cal=[]
 k1=(cal[1]/cal_original[1])
 k2=(cal[5]/cal_original[5])
@@ -146,6 +146,27 @@ for row in rows:
             k=m
 for i in range(8):
     cal[i]=round(cal[i])
-print(min1)
+
 print(calculated_cal)
+
+#Adding to the main dataset
+import csv
+rows=[]
+fields=[]
+with open('File_with_clusters_5.csv','r') as csv_input:
+    csvreader= csv.reader(csv_input)
+    fields=next(csvreader)
+    for row in csvreader:
+        rows.append(row)
+fields.append("Salary Final")
+i=0        
+for row in rows:
+    row.append(calculated_cal[i])
+    i+=1        
+
+with open('Final_data_file_6.csv','w') as csvfile:
+    csvwriter=csv.writer(csvfile)
+    csvwriter.writerow(fields)
+    csvwriter.writerows(rows)
+    
 

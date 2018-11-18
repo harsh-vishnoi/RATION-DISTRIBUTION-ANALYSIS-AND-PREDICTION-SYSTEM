@@ -6,7 +6,7 @@ import pandas as pd
 
  #Importing Dataset
  
-dataset = pd.read_csv('Answer.csv')
+dataset = pd.read_csv("Final_file_of_family_data_4.csv")
 X = dataset.iloc[:,[11,19]].values
 
 #Using Elbow method to find the number of clusters
@@ -48,7 +48,7 @@ plt.show()
 import csv
 rows=[]
 fields=[]
-with open('Answer.csv','r') as csv_input:
+with open('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Ration_data/"File_with_clusters_5.csv"','r') as csv_input:
     csvreader= csv.reader(csv_input)
     fields=next(csvreader)
     for row in csvreader:
@@ -59,7 +59,7 @@ for row in rows:
     row.append(y_kmeans[i])
     i+=1        
 
-with open('Answer.csv','w') as csvfile:
+with open('Desktop/PROJECTS/RATION-DISTRIBUTION-ANALYSIS-AND-PREDICTION-SYSTEM/Ration_data/"File_with_clusters_5.csv"','w') as csvfile:
     csvwriter=csv.writer(csvfile)
     csvwriter.writerow(fields)
     csvwriter.writerows(rows)
