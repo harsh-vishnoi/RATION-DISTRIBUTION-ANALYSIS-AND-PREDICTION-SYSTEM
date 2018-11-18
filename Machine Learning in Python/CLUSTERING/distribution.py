@@ -4,12 +4,15 @@ import csv
 fields=[]
 rows=[]
 i=0
+
 with open('File_with_clusters_5.csv','r') as csv_input:
 	csvreader= csv.reader(csv_input)
 	fields=next(csvreader)
 	for row in csvreader:
 		rows.append(row)
-cal=[0,0,0,0,0,0,0,0]    
+
+cal=[0,0,0,0,0,0,0,0]
+
 for row in rows:
     if int(row[20])==0:
         cal[0]=cal[0]+float(row[19])
@@ -31,6 +34,7 @@ for row in rows:
 total_cal=sum(cal)
 
 decrement=govt_cal/total_cal
+
 if decrement<=1:
     for i in range(8):
         cal[i]=cal[i]*decrement 
@@ -61,8 +65,7 @@ elif decrement>.7 and decrement<=.9:
     cal[6]+=a3
     a4=cal[2]*.05
     cal[7]+=a4
-    cal[2]-=a4 
-    
+    cal[2]-=a4
 elif decrement<=.7:
     a1=cal[3]*.3
     cal[1]+=a1
@@ -76,7 +79,6 @@ elif decrement<=.7:
     a4=cal[2]*.1
     cal[7]+=a4
     cal[2]-=a4
-       
 
 calculated_cal=[]
 k1=(cal[1]/cal_original[1])
